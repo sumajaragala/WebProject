@@ -1,0 +1,1080 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SRISTAR GOLD COMPANY</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar-logo {
+      height: 80px;
+    }
+
+   .alert-top {
+      background: linear-gradient(135deg, #e8b188, #e9d2af);
+      color: #352022;
+      text-align: center;
+      padding: 6px 0;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    
+    .navbar-brand img {
+      height: 80px;
+    }
+
+    .enquire-btn {
+      font-weight: 600;
+    }
+
+    @media (max-width: 991.98px) {
+      .navbar-nav h4 {
+        font-size: 18px;
+        margin: 0;
+      }
+    }
+
+     </style>
+</head>
+
+<body>
+
+  <!-- Alert Top -->
+  <div class="alert-top d-flex justify-content-between align-items-center px-3 py-2">
+    <div>Mon – Sun: 9:30am – 7:00pm</div>
+    <a href="blocation.html" class="btn btn-outline-dark btn-medium d-flex align-items-center gap-1">
+      <i class="bi bi-geo-alt-fill"></i>
+      <span><b>Location</b></span>
+    </a>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container-fluid px-3">
+
+      <!-- Brand Center -->
+      <a class="navbar-brand mx-auto d-lg-none" href="index.html">
+        <img src="images/logo1.png" alt="SRISTAR GOLD COMPANY Logo">
+      </a>
+
+      <!-- Toggle Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+
+        <!-- Left Links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">
+              <h4>Home</h4>
+            </a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">
+              <h4>About Us</h4>
+            </a></li>
+          <li class="nav-item"><a class="nav-link" href="branches.html">
+              <h4>Branches</h4>
+            </a></li>
+          <li class="nav-item"><a class="nav-link active" href="founder.html">
+              <h4>About Founder's</h4>
+            </a></li>
+        </ul>
+
+        <!-- Brand Center (Desktop) -->
+        <a class="navbar-brand d-none d-lg-block mx-auto" href="index.html">
+          <img src="images/logo1.png" alt="SRISTAR GOLD COMPANY Logo">
+        </a>
+
+        <!-- Right Links -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="blog1.html">
+              <h4>Blogs</h4>
+            </a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">
+              <h4>Services</h4>
+            </a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">
+              <h4>Contact Us</h4>
+            </a></li>
+          <li class="nav-item">
+            <button onclick="toggleEnquiry()" class="btn btn-warning fw-bold">ENQUIRE NOW</button>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+      #enquiryPanel {
+        width: 400px;
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+
+      #enquiryPanel i {
+        font-size: 1.3rem;
+      }
+
+      #enquiryPanel p strong {
+        font-size: 1.2rem;
+      }
+
+      #enquiryPanel .btn {
+        font-size: 1.1rem;
+        padding: 10px 16px;
+      }
+
+      #enquiryPanel .bi {
+        vertical-align: middle;
+      }
+
+      /* Social icons default style */
+.follow-icons a i {
+  transition: color 0.3s ease;
+}
+
+/* Facebook */
+.follow-icons a:hover .bi-facebook {
+  color: #1877F2 !important; /* Facebook blue */
+}
+
+/* Instagram */
+.follow-icons a:hover .bi-instagram {
+  color: #E4405F !important; /* Instagram pink-red */
+}
+
+/* YouTube */
+.follow-icons a:hover .bi-youtube {
+  color: #FF0000 !important; /* YouTube red */
+}
+
+/* Twitter (X) */
+.follow-icons a:hover .bi-twitter {
+  color: #1DA1F2 !important; /* Twitter blue */
+}
+
+/* LinkedIn */
+.follow-icons a:hover .bi-linkedin {
+  color: #0A66C2 !important; /* LinkedIn blue */
+}
+
+/* Pinterest */
+.follow-icons a:hover .bi-pinterest {
+  color: #BD081C !important; /* Pinterest red */
+}
+    </style>
+  </head>
+
+  <!-- Enquiry Panel -->
+  <div id="enquiryPanel" class="position-fixed top-0 end-0 bg-white shadow p-4"
+    style="height: 100vh; z-index: 1050; transform: translateX(100%); transition: transform 0.4s ease;">
+    <div class="d-flex justify-content-between align-items-start mb-4">
+      <img src="images/logo1.png" alt="Sristar Gold Company" style="height: 50px;">
+      <button onclick="toggleEnquiry()" class="btn-close fs-4"></button>
+    </div>
+
+    <p class="mb-4 fs-5">Stay connected with us for the latest updates.</p>
+
+    <p class="mb-3">
+      <i class="bi bi-geo-alt-fill text-danger me-2"></i>
+      <strong>Address:</strong><br>
+      Corp. Off: 280/1, Anniamma Arcade, <br>Sampige Road, 18th Cross Rd, Malleshwaram,<br> Bengaluru,Karnataka 560003
+    </p>
+
+    <p class="mb-3">
+      <i class="bi bi-clock-fill text-danger me-2"></i>
+      <strong>Timings:</strong> Mon – Sat: 9:00am – 7:00pm
+    </p>
+
+    <p class="mb-3">
+      <i class="bi bi-telephone-fill text-danger me-2"></i>
+      <strong>Phone:</strong> +91 6366333444
+    </p>
+
+    <p class="mb-4">
+      <i class="bi bi-envelope-fill text-danger me-2"></i>
+      <strong>Email:</strong> sristargoldcompany@gmail.com
+    </p>
+
+    <a href="contact.html" class="btn btn-warning w-100 mb-4">CONTACT US</a>
+
+    <div class="d-flex flex-wrap justify-content-start gap-4 fs-3 follow-icons">
+  <a href="https://www.facebook.com/sristargold" target="_blank"><i class="bi bi-facebook text-dark"></i></a>
+  <a href="https://www.instagram.com/sristargold/" target="_blank"><i class="bi bi-instagram text-dark"></i></a>
+  <a href="https://www.youtube.com/channel/UC7xKHOdqDLvlnynflYNBdew/playlists" target="_blank"><i class="bi bi-youtube text-dark"></i></a>
+  <a href="https://x.com/SriStarGold/status/1422861180884770824" target="_blank"><i class="bi bi-twitter text-dark"></i></a>
+  <a href="https://www.linkedin.com/company/sristargold/" target="_blank"><i class="bi bi-linkedin text-dark"></i></a>
+  <a href="https://in.pinterest.com/sristargold/" target="_blank"><i class="bi bi-pinterest text-dark"></i></a>
+</div>
+  </div>
+
+  <script>
+    function toggleEnquiry() {
+      const panel = document.getElementById('enquiryPanel');
+      const isOpen = panel.style.transform === 'translateX(0%)';
+      panel.style.transform = isOpen ? 'translateX(100%)' : 'translateX(0%)';
+    }
+  </script>
+
+ 
+<!-- Carousel section -->
+ <style>
+  :root {
+  --header-height: 180px; /* alert + navbar height */
+}
+
+/* Default (desktop) */
+#carouselExampleCaptions {
+  height: calc(90vh - var(--header-height));
+}
+
+#carouselExampleCaptions .carousel-inner,
+#carouselExampleCaptions .carousel-item {
+  height: 100%;
+}
+
+#carouselExampleCaptions .row {
+  height: 100%;
+}
+
+/* Mobile equal height before override */
+#carouselExampleCaptions .col-12 {
+  height: 50%;
+}
+
+@media (max-width: 767px) {
+  /* Mobile: carousel 70% height including header */
+  #carouselExampleCaptions {
+    height: calc(85vh - var(--header-height));
+  }
+}
+
+@media (min-width: 768px) {
+  /* Desktop: restore 30/70 height split */
+  #carouselExampleCaptions .col-md-4,
+  #carouselExampleCaptions .col-md-8 {
+    height: 100%;
+  }
+  #carouselExampleCaptions .col-12 {
+    height: auto;
+  }
+}
+
+#carouselExampleCaptions img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+</style>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background: linear-gradient(to right, #fbd5a0, #f8e1c2);">
+      <div class="container-fluid h-100">
+        <div class="row flex-column flex-md-row h-100">
+
+          <!-- 30% Text Content -->
+          <div class="col-12 col-md-4 d-flex flex-column justify-content-center text-dark px-4 px-md-5 py-4"
+            style="font-family: 'Times New Roman', Times, serif;">
+            <div>
+              <h1 class="fw-bold mb-3 text-center text-md-start" style="font-size: 2rem;">
+                CONTACT US
+              </h1>
+              <p class="text-center text-md-start" style="font-size: 1.6rem;">
+                India’s Most Trusted Gold Buyers,<br>
+                SriStar Gold Company is an ISO Certified company.
+              </p>
+            </div>
+          </div>
+
+          <!-- 70% Image Content -->
+          <div class="col-12 col-md-8 d-flex align-items-center justify-content-center p-0">
+            <img src="images/b2.jpg" alt="Gold Offer"
+              class="img-fluid rounded-0 rounded-end-md">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- CONTACT SECTION -->
+<section class="contact-section py-5">
+  <div class="container">
+    <div class="row align-items-stretch"> <!-- align-items-stretch makes both same height -->
+      
+      <!-- Left: Contact Info -->
+      <div class="col-md-6 mb-4 d-flex">
+        <div class="contact-info w-100 p-4 rounded shadow-lg">
+          <h1 class="fw-bold text-dark mb-3 display-4">Let us help you</h1>
+          <p class="text-muted section-subtitle mb-4 fs-4">Contact us</p>
+
+          <p class="mb-4 fs-4">
+            <strong>Email:</strong>
+            <a href="mailto:sristargoldcompany@gmail.com" class="text-decoration-none text-primary">
+              sristargoldcompany@gmail.com
+            </a>
+          </p>
+
+          <div class="mb-4">
+            <p class="text-warning fw-bold mb-1 fs-4">
+              <i class="bi bi-geo-alt-fill me-2"></i>WORK STATION
+            </p>
+            <p class="text-dark mb-0 fs-4">
+              Corp. Off: 280/1, Anniamma Arcade, <br>
+              Sampige Road, 18th Cross Rd, Malleshwaram, <br>
+              Bengaluru, Karnataka 560003
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <p class="text-warning fw-bold mb-1 fs-4">
+              <i class="bi bi-clock-fill me-2"></i>WORKING TIME
+            </p>
+            <p class="text-dark mb-0 fs-4">Mon – Fri: 9:30am – 7:00pm</p>
+          </div>
+
+          <div>
+            <p class="text-warning fw-bold mb-1 fs-4">
+              <i class="bi bi-telephone-fill me-2"></i>CALL US 24/7
+            </p>
+            <p class="text-dark mb-0 fs-4">6364333444</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="col-md-6 d-flex">
+        <div class="p-4 shadow-lg rounded form-container contact-box w-100">
+          <h2 class="mb-4 text-center text-dark">
+            <b>Get In Touch</b><span style="color: rgb(249, 177, 22);">!</span>
+          </h2>
+
+          <form action="thankyou.html" method="GET" class="h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="mb-4 text-start">
+                <label for="name" class="form-label text-dark">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your name">
+              </div>
+              <div class="mb-4 text-start">
+                <label for="contact" class="form-label text-dark">Contact Number:</label>
+                <input type="tel" class="form-control" id="contact" name="contact" required placeholder="10-digit mobile number">
+              </div>
+              <div class="mb-4 text-start">
+                <label for="type" class="form-label text-dark">Select Type:</label>
+                <select class="form-select" id="type" name="type" required>
+                  <option selected disabled>Select an option</option>
+                  <option value="sell">Sell Gold</option>
+                  <option value="release">Release Pledged Gold</option>
+                  <option value="enquiry">General Enquiry</option>
+                </select>
+              </div>
+              <div class="mb-4 text-start">
+                <label for="state" class="form-label text-dark">Select Your State:</label>
+                <select class="form-select" id="state" name="state" required>
+                  <option selected disabled>Select your state</option>
+                  <option value="karnataka">Karnataka</option>
+                  <option value="tamilnadu">Tamil Nadu</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-warning w-100 py-3 fw-bold">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- STYLES -->
+<style>
+  .contact-section {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, #f3f3f0, #e7d1b1);
+  }
+
+  .contact-info {
+    background-color: #ffffff;
+    border-left: 5px solid #f7a738;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact-info h1 {
+    font-size: 3rem;
+  }
+
+  .section-subtitle {
+    font-weight: 500;
+    font-size: 1.4rem;
+    font-style: italic;
+  }
+
+  /* Glassmorphism */
+  .form-container {
+    min-height: 100%;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .form-label {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .form-control,
+  .form-select {
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(254, 226, 226, 0.85);
+  }
+
+  .form-control:focus,
+  .form-select:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(255,255,255,0.6);
+    border-color: #fff;
+  }
+</style>
+
+
+  <!-- call & Whatsapp icons -->
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Contact Buttons</title>
+
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+      /* Floating Buttons Container */
+      .floating-buttons {
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 9999;
+      }
+
+      /* Common Button Style */
+      .floating-buttons a {
+        width: 60px;
+        height: 60px;
+        background-color: #25d366;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+        transition: transform 0.2s ease;
+      }
+
+      .floating-buttons a:hover {
+        transform: scale(1.1);
+      }
+    </style>
+
+    <!-- Floating Call and WhatsApp Buttons -->
+    <div class="floating-buttons">
+      <!-- Call Button -->
+      <a href="tel:+916366333444" target="_blank" class="call-btn" title="Call SriStar Gold Company">
+        <i class="bi bi-telephone-fill"></i>
+      </a>
+
+      <!-- WhatsApp Button -->
+      <a href="https://wa.me/916366333444" target="_blank" class="whatsapp-btn" title="Chat with SriStar on WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+    </div>
+
+
+    <!-- chat box -->
+
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Sristar Chat Widget</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+      <style>
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+        }
+
+        /* Chat icon */
+        .chat-toggle {
+          position: fixed;
+          bottom: 20px;
+          left: 20px;
+          background-color: rgb(209, 170, 28);
+          color: white;
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 28px;
+          cursor: pointer;
+          z-index: 9999;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Chat box */
+        .chat-box {
+          position: fixed;
+          bottom: 90px;
+          left: 20px;
+          width: 320px;
+          background-color: white;
+          border-radius: 10px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+          display: none;
+          flex-direction: column;
+          border: 2px solid gold;
+          z-index: 10000;
+        }
+
+        .chat-header {
+          background-color: rgb(209, 170, 28);
+          color: white;
+          padding: 10px;
+          font-weight: bold;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+
+        .chat-body {
+          max-height: 300px;
+          overflow-y: auto;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .chat-footer {
+          padding: 10px;
+          border-top: 1px solid #ccc;
+        }
+
+        .message {
+          background: #f1f1f1;
+          border-radius: 15px;
+          padding: 10px;
+          margin: 5px 0;
+          max-width: 80%;
+        }
+
+        .message.user {
+          background-color: rgb(209, 170, 28);
+          color: white;
+          align-self: flex-end;
+        }
+
+        .option-btn {
+          margin: 5px 5px 0 0;
+          border: 1px solid rgb(209, 170, 28);
+          background: transparent;
+          color: rgb(209, 170, 28);
+          border-radius: 10px;
+          padding: 5px 10px;
+          cursor: pointer;
+        }
+
+        input.chat-input {
+          width: 100%;
+          border-radius: 10px;
+          padding: 8px;
+          border: 1px solid #ccc;
+        }
+      </style>
+    </head>
+
+  <body>
+
+    <!-- Chat Icon -->
+    <div class="chat-toggle" id="chatToggle" title="Chat with us">
+      <i class="bi bi-chat-dots-fill"></i>
+    </div>
+
+
+    <!-- Chat Box -->
+    <div class="chat-box" id="chatBox">
+      <div class="chat-header">
+        <span>Chat With Us</span>
+        <span style="cursor:pointer;" onclick="closeChat()">✖</span>
+      </div>
+      <div class="chat-body" id="chatBody">
+        <div class="message">Hi, welcome to Sristar Gold Company. I'm your chat assistant.<br>Please provide your
+          10-digit mobile number to continue.</div>
+      </div>
+      <div class="chat-footer">
+        <input type="text" class="chat-input" id="userInput" placeholder="Type here..."
+          onkeydown="if(event.key==='Enter') processInput()">
+      </div>
+    </div>
+
+    <script>
+      const chatToggle = document.getElementById('chatToggle');
+      const chatBox = document.getElementById('chatBox');
+      const chatBody = document.getElementById('chatBody');
+      const userInput = document.getElementById('userInput');
+
+      let stage = 'mobile';
+      let mobile = '';
+      let selectedState = '';
+
+      // Toggle chatbox on icon click
+      chatToggle.onclick = () => {
+        chatBox.style.display = 'flex';
+      };
+
+      function closeChat() {
+        chatBox.style.display = 'none';
+        userInput.value = '';
+        chatBody.innerHTML = `<div class="message">Hi, welcome to Sristar Gold Company. I'm your chat assistant.<br>Please provide your 10-digit mobile number to continue.</div>`;
+        stage = 'mobile';
+      }
+
+      function processInput() {
+        const input = userInput.value.trim();
+        if (!input) return;
+
+        appendMessage(input, true);
+        userInput.value = '';
+
+        if (stage === 'mobile') {
+          if (/^\d{10}$/.test(input)) {
+            mobile = input;
+            appendMessage("Thanks! Now select your state:");
+            showStateOptions();
+            stage = 'state';
+          } else {
+            appendMessage("Please enter a valid 10-digit mobile number.");
+          }
+        } else if (stage === 'state') {
+          if (["Karnataka", "Tamil Nadu"].includes(input)) {
+            selectedState = input;
+            appendMessage(`Thank you! What would you like to do?`);
+            showServiceOptions();
+            stage = 'service';
+          } else {
+            appendMessage("Please choose from the given state options.");
+          }
+        } else if (stage === 'service') {
+          if (["Sell Gold", "Buy Gold", "Repledge Gold"].includes(input)) {
+            appendMessage(`You selected "${input}". Our team will contact you shortly.`);
+            stage = 'done';
+          } else {
+            appendMessage("Please choose from the service options.");
+          }
+        } else {
+          appendMessage("Thank you for reaching out. Our team will get back to you soon.");
+        }
+      }
+
+      function appendMessage(text, isUser = false) {
+        const msg = document.createElement('div');
+        msg.className = `message ${isUser ? 'user' : ''}`;
+        msg.innerText = text;
+        chatBody.appendChild(msg);
+        chatBody.scrollTop = chatBody.scrollHeight;
+      }
+
+      function showStateOptions() {
+        const states = ["Karnataka", "Tamil Nadu"];
+        const container = document.createElement('div');
+        container.className = 'message';
+        states.forEach(state => {
+          const btn = document.createElement('button');
+          btn.className = 'option-btn';
+          btn.innerText = state;
+          btn.onclick = () => {
+            appendMessage(state, true);
+            selectedState = state;
+            appendMessage(`Thank you! What would you like to do?`);
+            showServiceOptions();
+            stage = 'service';
+          };
+          container.appendChild(btn);
+        });
+        chatBody.appendChild(container);
+        chatBody.scrollTop = chatBody.scrollHeight;
+      }
+
+      function showServiceOptions() {
+        const services = ["Sell Gold", "Buy Gold", "Repledge Gold"];
+        const container = document.createElement('div');
+        container.className = 'message';
+        services.forEach(service => {
+          const btn = document.createElement('button');
+          btn.className = 'option-btn';
+          btn.innerText = service;
+          btn.onclick = () => {
+            appendMessage(service, true);
+            appendMessage(`You selected "${service}". Our team will contact you shortly.`);
+            stage = 'done';
+          };
+          container.appendChild(btn);
+        });
+        chatBody.appendChild(container);
+        chatBody.scrollTop = chatBody.scrollHeight;
+      }
+    </script>
+
+
+
+     <!-- FOOTER (Mobile-Optimized, Times New Roman Font) -->
+<footer class="text-dark pt-5 pb-4"
+  style="background: linear-gradient(135deg, #e8b188, #e9d2af); font-family: 'Times New Roman', Times, serif; font-size: 17px;">
+  <div class="container">
+    <div class="row text-start gy-4">
+
+      <!-- Logo & Contact -->
+      <div class="col-12 col-md-3">
+        <img src="images/logo2.png" alt="Sristar Logo" style="max-width: 200px;"
+          class="mb-4 d-block mx-auto mx-md-0">
+        <ul class="list-unstyled ps-md-0">
+          <li class="mb-3 d-flex align-items-start">
+            <i class="bi bi-geo-alt-fill me-3 fs-4"></i>
+            <span style="line-height: 1.6;">
+              Corp. Off: 280/1, Anniamma Arcade,<br>
+              Sampige Road, 18th Cross Rd,<br>
+              Malleshwaram, Bengaluru, Karnataka 560003
+            </span>
+          </li>
+          <li class="mb-3 d-flex align-items-start">
+            <i class="bi bi-envelope-fill me-3 fs-4"></i>
+            <span>sristargoldcompany@gmail.com</span>
+          </li>
+          <li class="d-flex align-items-start">
+            <i class="bi bi-telephone-fill me-3 fs-4"></i>
+            <span>+91 6366333444</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Useful Links -->
+      <div class="col-6 col-md-3">
+        <h5 class="fw-bold fs-4 mb-3">Useful Links</h5>
+        <ul class="list-unstyled">
+          <li class="mb-3"><i class="bi bi-chevron-right me-2 fs-5"></i><a href="index.html"
+              class="text-dark text-decoration-none">Home</a></li>
+          <li class="mb-3"><i class="bi bi-chevron-right me-2 fs-5"></i><a href="about.html"
+              class="text-dark text-decoration-none">About Us</a></li>
+          <li class="mb-3"><i class="bi bi-chevron-right me-2 fs-5"></i><a href="services.html"
+              class="text-dark text-decoration-none">Services</a></li>
+          <li class="mb-3"><i class="bi bi-chevron-right me-2 fs-5"></i><a href="contact.html"
+              class="text-dark text-decoration-none">Contact</a></li>
+          <li class="mb-3"><i class="bi bi-chevron-right me-2 fs-5"></i><a href="branches.html"
+              class="text-dark text-decoration-none">Branches</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="col-6 col-md-3">
+        <h5 class="fw-bold fs-4 mb-3">Services</h5>
+        <ul class="list-unstyled">
+          <li class="mb-3"><i class="bi bi-chevron-right me-2 fs-5"></i><a href="webuygold.html"
+              class="text-dark text-decoration-none">We Buy Gold</a></li>
+          <li class="mb-3"><i class="bi bi-chevron-right me-2 fs-5"></i><a href="wesellgold.html"
+              class="text-dark text-decoration-none">We Sell Gold</a></li>
+          <li class="mb-3"><i class="bi bi-chevron-right me-2 fs-5"></i><a href="goldonrent.html"
+              class="text-dark text-decoration-none">Gold on Rent</a></li>
+          <li class="mb-3"><i class="bi bi-chevron-right me-2 fs-5"></i><a href="releasegold.html"
+              class="text-dark text-decoration-none">We Release Gold</a></li>
+          <li class="mb-3"><i class="bi bi-chevron-right me-2 fs-5"></i><a href="repledgegold.html"
+              class="text-dark text-decoration-none">Release Pledged Gold</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="col-12 col-md-3">
+        <h5 class="fw-bold fs-4 mb-3">Follow Us</h5>
+        <div class="d-flex flex-wrap justify-content-start gap-4 fs-3 follow-icons">
+  <a href="https://www.facebook.com/sristargold" target="_blank"><i class="bi bi-facebook text-dark"></i></a>
+  <a href="https://www.instagram.com/sristargold/" target="_blank"><i class="bi bi-instagram text-white"></i></a>
+  <a href="https://www.youtube.com/channel/UC7xKHOdqDLvlnynflYNBdew/playlists" target="_blank"><i class="bi bi-youtube text-dark"></i></a>
+  <a href="https://x.com/SriStarGold/status/1422861180884770824" target="_blank"><i class="bi bi-twitter text-white"></i></a>
+  <a href="https://www.linkedin.com/company/sristargold/" target="_blank"><i class="bi bi-linkedin text-dark"></i></a>
+  <a href="https://in.pinterest.com/sristargold/" target="_blank"><i class="bi bi-pinterest text-white"></i></a>
+</div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center py-3 border-top border-light mt-4" style="font-size: 16px;">
+    &copy; 2025 <strong>Sristar Gold Company</strong>. All rights reserved.
+  </div>
+</footer>
+<style>
+  @media (min-width: 768px) {
+  .footer-useful-links {
+    padding-left: 40px;
+  }
+}
+
+  @media (min-width: 768px) {
+  .footer-column-spacing {
+    padding-left: 40px;
+  }
+}
+
+
+/* Social icons default style */
+.follow-icons a i {
+  transition: color 0.3s ease;
+}
+
+/* Facebook */
+.follow-icons a:hover .bi-facebook {
+  color: #1877F2 !important; /* Facebook blue */
+}
+
+/* Instagram */
+.follow-icons a:hover .bi-instagram {
+  color: #E4405F !important; /* Instagram pink-red */
+}
+
+/* YouTube */
+.follow-icons a:hover .bi-youtube {
+  color: #FF0000 !important; /* YouTube red */
+}
+
+/* Twitter (X) */
+.follow-icons a:hover .bi-twitter {
+  color: #1DA1F2 !important; /* Twitter blue */
+}
+
+/* LinkedIn */
+.follow-icons a:hover .bi-linkedin {
+  color: #0A66C2 !important; /* LinkedIn blue */
+}
+
+/* Pinterest */
+.follow-icons a:hover .bi-pinterest {
+  color: #BD081C !important; /* Pinterest red */
+}
+</style>
+
+   
+    
+    <!-- Gold Rate Popup Form -->
+
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Gold Rate Form</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+      <style>
+        body {
+          margin: 0;
+          font-family: 'Times New Roman', Times, serif;
+        }
+
+        #goldRateModal {
+          z-index: 2000;
+          display: flex;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background: rgba(0, 0, 0, 0.7);
+          align-items: center;
+          justify-content: center;
+        }
+
+        .form-box {
+          width: 100%;
+          max-width: 500px;
+          background-color: #ebd5b7;
+          padding: 4rem 3rem;
+          border-radius: 25px;
+          position: relative;
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-close-custom {
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          font-size: 1.7rem;
+          color: #000;
+          background: #fff3e0;
+          border: 1px solid #999;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          line-height: 36px;
+          text-align: center;
+          cursor: pointer;
+          transition: background 0.2s;
+          font-weight: bold;
+        }
+
+        .btn-close-custom:hover {
+          background: #d6a76c;
+        }
+
+        .form-control,
+        .form-select {
+          height: 60px;
+          font-size: 1.1rem;
+          font-weight: bold;
+          margin-bottom: 1.5rem;
+          border-radius: 15px;
+          border: 2px solid #a67c52;
+          padding-left: 1rem;
+          background-color: #fff9f0;
+          color: #333;
+        }
+
+        .form-control::placeholder {
+          color: #444;
+          font-weight: bold;
+        }
+
+        h5 {
+          font-size: 2rem;
+          margin-bottom: 2rem;
+          font-weight: bold;
+        }
+
+        .btn-danger {
+          font-size: 1.3rem;
+          font-weight: bold;
+          padding: 14px;
+          border-radius: 12px;
+        }
+
+        @media (max-width: 576px) {
+          .form-box {
+            padding: 2rem 1.5rem;
+          }
+
+          h5 {
+            font-size: 1.5rem;
+          }
+
+          .form-control,
+          .form-select {
+            font-size: 1rem;
+            height: 50px;
+          }
+
+          .btn-danger {
+            font-size: 1.1rem;
+          }
+        }
+      </style>
+    </head>
+
+    <body>
+
+     
+                <!-- Modal -->
+                
+<div id="goldRateModal">
+  <div class="form-box shadow-lg">
+    <div id="closeBtn" class="btn-close-custom">✖</div>
+    <h5 class="text-center text-danger">Know Today's Gold Rate</h5>
+
+    <form id="goldForm">
+      <input type="text" class="form-control" id="popup-name" placeholder="Name" required />
+      <input type="tel" class="form-control" id="popup-contact" placeholder="Contact Number"
+        pattern="[0-9]{10}" maxlength="10" required />
+      <select class="form-select" id="popup-type" required>
+        <option value="">Select Type</option>
+        <option>Buy Gold</option>
+        <option>Sell Gold</option>
+        <option>Repledge Gold</option>
+      </select>
+      <select class="form-select" id="popup-state" required>
+        <option value="">Select Your State</option>
+        <option>Karnataka</option>
+        <option>Tamil Nadu</option>
+      </select>
+      <button type="submit" class="btn btn-warning w-100 mt-2">SUBMIT</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  // Close button functionality
+  document.getElementById('closeBtn').addEventListener('click', function () {
+    document.getElementById('goldRateModal').style.display = 'none';
+  });
+
+  // Popup form validation
+  document.getElementById('goldForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById('popup-name').value.trim();
+    const contact = document.getElementById('popup-contact').value.trim();
+    const type = document.getElementById('popup-type').value;
+    const state = document.getElementById('popup-state').value;
+
+    const contactRegex = /^[0-9]{10}$/;
+
+    if (!name || !contact || !type || !state) {
+      alert("Please fill out all fields.");
+      return;
+    }
+
+    if (!contactRegex.test(contact)) {
+      alert("Please enter a valid 10-digit mobile number.");
+      return;
+    }
+
+    // ✅ Redirect on success
+    window.location.href = 'thankyou.html';
+  });
+  
+</script>
+
+      <!-- JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>

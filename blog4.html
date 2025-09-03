@@ -1,0 +1,1137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SRISTAR GOLD COMPANY</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar-logo {
+      height: 80px;
+    }
+
+    .navbar-brand img {
+      height: 80px;
+    }
+
+    .enquire-btn {
+      font-weight: 600;
+    }
+
+    @media (max-width: 991.98px) {
+      .navbar-nav h4 {
+        font-size: 18px;
+        margin: 0;
+      }
+    }
+
+    .overlay-header {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .carousel-item {
+      height: 100vh;
+      min-height: 650px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+
+    .carousel-inner .container {
+      padding-top: 150px;
+    }
+
+    .carousel-text {
+      padding-right: 30px;
+    }
+
+    .carousel-text h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .carousel-text p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    .right-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #645959;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .footer h4 {
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Alert Top -->
+  <style>
+     .alert-top {
+      background: linear-gradient(135deg, #e8b188, #e9d2af);
+      color: #352022;
+      text-align: center;
+      padding: 6px 0;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+  </style>
+
+    <!-- Alert Top -->
+  <div class="alert-top d-flex justify-content-between align-items-center px-3 py-2">
+    <div>Mon – Sun: 9:30am – 7:00pm</div>
+    <a href="blocation.html" class="btn btn-outline-dark btn-medium d-flex align-items-center gap-1">
+      <i class="bi bi-geo-alt-fill"></i>
+      <span><b>Location</b></span>
+    </a>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container-fluid px-3" style="font-family: 'Times New Roman', Times, serif;">
+
+      <!-- Brand Center -->
+      <a class="navbar-brand mx-auto d-lg-none" href="index.html">
+        <img src="images/logo1.png" alt="SRISTAR GOLD COMPANY Logo">
+      </a>
+
+      <!-- Toggle Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+
+        <!-- Left Links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">
+              <h4>Home</h4>
+            </a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">
+              <h4>About Us</h4>
+            </a></li>
+          <li class="nav-item"><a class="nav-link" href="branches.html">
+              <h4>Branches</h4>
+            </a></li>
+          <li class="nav-item"><a class="nav-link active" href="founder.html">
+              <h4>About Founder's</h4>
+            </a></li>
+        </ul>
+
+        <!-- Brand Center (Desktop) -->
+        <a class="navbar-brand d-none d-lg-block mx-auto" href="index.html">
+          <img src="images/logo1.png" alt="SRISTAR GOLD COMPANY Logo">
+        </a>
+
+        <!-- Right Links -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="blog1.html">
+              <h4>Blogs</h4>
+            </a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">
+              <h4>Services</h4>
+            </a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">
+              <h4>Contact Us</h4>
+            </a></li>
+          <li class="nav-item">
+            <button onclick="toggleEnquiry()" class="btn btn-warning fw-bold">ENQUIRE NOW</button>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+      #enquiryPanel {
+        width: 400px;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      #enquiryPanel i {
+        font-size: 1.3rem;
+      }
+
+      #enquiryPanel p strong {
+        font-size: 1.2rem;
+      }
+
+      #enquiryPanel .btn {
+        font-size: 1.1rem;
+        padding: 10px 16px;
+      }
+
+      #enquiryPanel .bi {
+        vertical-align: middle;
+      }
+
+      /* Social icons default style */
+.follow-icons a i {
+  transition: color 0.3s ease;
+}
+
+/* Facebook */
+.follow-icons a:hover .bi-facebook {
+  color: #1877F2 !important; /* Facebook blue */
+}
+
+/* Instagram */
+.follow-icons a:hover .bi-instagram {
+  color: #E4405F !important; /* Instagram pink-red */
+}
+
+/* YouTube */
+.follow-icons a:hover .bi-youtube {
+  color: #FF0000 !important; /* YouTube red */
+}
+
+/* Twitter (X) */
+.follow-icons a:hover .bi-twitter {
+  color: #1DA1F2 !important; /* Twitter blue */
+}
+
+/* LinkedIn */
+.follow-icons a:hover .bi-linkedin {
+  color: #0A66C2 !important; /* LinkedIn blue */
+}
+
+/* Pinterest */
+.follow-icons a:hover .bi-pinterest {
+  color: #BD081C !important; /* Pinterest red */
+}
+    </style>
+  </head>
+
+  <!-- Enquiry Panel -->
+  <div id="enquiryPanel" class="position-fixed top-0 end-0 bg-white shadow p-4"
+    style="height: 100vh; z-index: 1050; transform: translateX(100%); transition: transform 0.4s ease;">
+    <div class="d-flex justify-content-between align-items-start mb-4">
+      <img src="images/logo1.png" alt="Sristar Gold Company" style="height: 50px;">
+      <button onclick="toggleEnquiry()" class="btn-close fs-4"></button>
+    </div>
+
+    <p class="mb-4 fs-5">Stay connected with us for the latest updates.</p>
+
+    <p class="mb-3">
+      <i class="bi bi-geo-alt-fill text-danger me-2"></i>
+      <strong>Address:</strong><br>
+      Corp. Off: 280/1, Anniamma Arcade, <br>Sampige Road, 18th Cross Rd, Malleshwaram,<br> Bengaluru,Karnataka 560003
+    </p>
+
+    <p class="mb-3">
+      <i class="bi bi-clock-fill text-danger me-2"></i>
+      <strong>Timings:</strong> Mon – Sat: 9:00am – 7:00pm
+    </p>
+
+    <p class="mb-3">
+      <i class="bi bi-telephone-fill text-danger me-2"></i>
+      <strong>Phone:</strong> +91 6366333444
+    </p>
+
+    <p class="mb-4">
+      <i class="bi bi-envelope-fill text-danger me-2"></i>
+      <strong>Email:</strong> sristargoldcompany@gmail.com
+    </p>
+
+    <a href="contact.html" class="btn btn-warning w-100 mb-4">CONTACT US</a>
+
+    <div class="d-flex flex-wrap justify-content-start gap-4 fs-3 follow-icons">
+  <a href="https://www.facebook.com/sristargold" target="_blank"><i class="bi bi-facebook text-dark"></i></a>
+  <a href="https://www.instagram.com/sristargold/" target="_blank"><i class="bi bi-instagram text-dark"></i></a>
+  <a href="https://www.youtube.com/channel/UC7xKHOdqDLvlnynflYNBdew/playlists" target="_blank"><i class="bi bi-youtube text-dark"></i></a>
+  <a href="https://x.com/SriStarGold/status/1422861180884770824" target="_blank"><i class="bi bi-twitter text-dark"></i></a>
+  <a href="https://www.linkedin.com/company/sristargold/" target="_blank"><i class="bi bi-linkedin text-dark"></i></a>
+  <a href="https://in.pinterest.com/sristargold/" target="_blank"><i class="bi bi-pinterest text-dark"></i></a>
+</div>
+  </div>
+
+  <script>
+    function toggleEnquiry() {
+      const panel = document.getElementById('enquiryPanel');
+      const isOpen = panel.style.transform === 'translateX(0%)';
+      panel.style.transform = isOpen ? 'translateX(100%)' : 'translateX(0%)';
+    }
+  </script>
+
+<!-- Carousel section -->
+<style>
+  :root {
+    --header-height: 180px; /* alert + navbar height */
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* ✅ Prevent horizontal gap */
+  }
+
+  /* Default (desktop) */
+  #carouselExampleCaptions {
+    height: calc(90vh - var(--header-height));
+  }
+
+  #carouselExampleCaptions .carousel-inner,
+  #carouselExampleCaptions .carousel-item {
+    height: 100%;
+  }
+
+  #carouselExampleCaptions .row {
+    height: 100%;
+    margin: 0; /* ✅ remove extra row spacing */
+  }
+
+  /* Mobile equal height before override */
+  #carouselExampleCaptions .col-12 {
+    height: 40%;
+  }
+
+  @media (max-width: 767px) {
+    /* Mobile: carousel 70% height including header */
+    #carouselExampleCaptions {
+      height: calc(75vh - var(--header-height));
+    }
+  }
+
+  @media (min-width: 768px) {
+    /* Desktop: restore 30/70 height split */
+    #carouselExampleCaptions .col-md-4,
+    #carouselExampleCaptions .col-md-8 {
+      height: 100%;
+    }
+
+    #carouselExampleCaptions .col-12 {
+      height: auto;
+    }
+  }
+
+  #carouselExampleCaptions img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    max-width: 100%; /* ✅ prevent overflow on mobile */
+    display: block;
+  }
+</style>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background: linear-gradient(to right, #fbd5a0, #f8e1c2);">
+      <div class="container-fluid h-100 p-0">
+        <div class="row flex-column flex-md-row h-100 g-0"><!-- ✅ g-0 removes horizontal gap -->
+
+          <!-- 30% Text Content -->
+          <div class="col-12 col-md-4 d-flex flex-column justify-content-center text-dark px-4 px-md-5 py-4"
+            style="font-family: 'Times New Roman', Times, serif;">
+            <div>
+              <h1 class="fw-bold mb-3 text-center text-md-start" style="font-size: 2rem;">
+                BLOG 4
+              </h1>
+              <p class="text-center text-md-start" style="font-size: 1.6rem;">
+                India’s Most Trusted Gold Buyers,<br>
+                SriStar Gold Company is an ISO Certified company.
+              </p>
+            </div>
+          </div>
+
+          <!-- 70% Image Content -->
+          <div class="col-12 col-md-8 d-flex align-items-center justify-content-center p-0">
+            <img src="images/12.jpg" alt="Gold Offer" class="img-fluid rounded-0 rounded-end-md">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BLOG SECTION -->
+<section class="py-5 bg-white" style="background: linear-gradient(to right,#f8e1c2,  #fbd5a0);">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="text-center mb-4">
+            <h2 class="fw-bold text-dark" style="font-family: 'Cinzel', serif; font-size: 50px;">Exploring The Golden Trails</h2>
+            <p class="text-muted fs-4" style="font-family: Georgia, 'Times New Roman', Times, serif;">Revealing the Mysteries of Gold.</p>
+        </div>
+
+        <div class="row">
+            <!-- Blog Posts (Left Column) -->
+            <div class="col-lg-8">
+                <div class="row g-4" id="blog-list" style="font-family: 'Times New Roman', Times, serif;">
+                    <!-- Blog Items -->
+                    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SriStar Gold - Pledged Gold Release</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #fffdf7;
+      }
+
+      .section-heading {
+        color: #c59d5f;
+        font-weight: 700;
+      }
+
+      .info-box h5 {
+        color: #5a4636;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Image Section -->
+   
+    <section class="text-center py-2 px-2 px-md-9">
+  <div class="container">
+    <img src="images/blog4.png" alt="Pledged Gold Release Service"
+      class="img-fluid rounded shadow responsive-img">
+  </div>
+</section>
+
+<style>
+  /* Keep desktop as is */
+  .responsive-img {
+    max-width: 1000px;
+    height: 800px;
+  }
+
+  /* Tablet and below */
+  @media (max-width: 768px) {
+    .responsive-img {
+      max-width: 100%;  /* Scale down */
+      height: auto;     /* Maintain ratio */
+    }
+  }
+</style>
+
+<!-- ===== Blog Section: Mysteries of Gold ===== -->
+<section class="py-5" style="background: linear-gradient(to right, #fff8ec, #fdf3e7); font-family: 'Georgia', serif;">
+  <div class="container">
+
+    <!-- Heading Row -->
+    <div class="row align-items-center mb-4">
+      <div class="col-md-8">
+        <span class="badge bg-warning text-dark mb-2 px-3 py-2">EDUCATION</span>
+        <h5 class="text-uppercase fw-bold text-muted">Exploring The Golden Trails</h5>
+        <h2 class="fw-bold display-6 text-dark">
+          <span style="color:#d4a373;">Revealing the</span> Mysteries of Gold
+        </h2>
+        <h4 class="fw-bold" style="font-size: 20px;">With Srikanth’s Expertise</h4>
+        <p class="text-muted" style="font-size: 20px;">by <em>Meyisanen Longkumer</em></p>
+      </div>
+      <div class="col-md-4 text-md-end text-center">
+        <p class="fw-bold text-dark" style="font-size: 20px;">MARCH 2024</p>
+        <img src="images/logo1.png" alt="Sristar Logo" class="img-fluid" style="max-height:55px;">
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Content Row -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-8">
+        <p class="text-dark" style="font-size: 20px;">
+          In the luxurious universe of gold trading, <strong>Srikanth V</strong>, Founder and Director of Sristar Gold and Sristar Sona Chandi Limited, stands out as a guiding star of insight and expertise. His journey, deeply rooted in the trade of this precious metal, offers a glimpse into the complexities and beauty of gold.
+        </p>
+        <p class="text-dark" style="font-size: 20px;">
+          In a candid conversation, Srikanth shares invaluable insights on the varieties of gold, their value, and the innovative techniques used for purity assessment.
+        </p>
+        <h5 class="fw-bold text-primary" style="font-size: 20px;">The Spectrum of Gold Colors: Insights from the Expert</h5>
+        <p class="text-dark" style="font-size: 20px;">
+          Gold’s allure lies not just in its economic value but in its cultural significance across civilizations. Discussing the types of gold, Srikanth reveals, 
+          <em>“We have majorly three types of gold in the industry: yellow gold, rose gold, and white gold.”</em>
+        </p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="images/srikantsir.jpg" alt="Srikanth V" class="img-fluid rounded shadow" style="max-height:320px;">
+        <p class="fw-bold mt-2">SRIKANTH V</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Yellow Gold Row -->
+    <div class="row align-items-center">
+      <div class="col-md-2 col-3 text-center">
+        <span style="font-size:2rem;">💛</span>
+      </div>
+      <div class="col-md-10 col-9">
+        <h4 class="fw-bold text-dark" style="font-size: 20px;">Yellow Gold</h4>
+        <p class="text-dark" style="font-size: 20px;">
+          “Yellow gold is the purest type of gold, made from pure gold and alloyed metals like zinc, copper, and silver,” Srikanth explains. Its versatility and hypoallergenic properties make it a jewel in the crown of the gold industry.
+        </p>
+        <p class="fw-bold text-uppercase" style="font-size: 20px;">ASLI KAHANI</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== Custom CSS ===== -->
+<style>
+section h2 span {
+  text-shadow: 0 0 10px gold, 0 0 20px #f7d794;
+}
+hr {
+  border: 1px solid #d4a373;
+  opacity: 0.6;
+}
+</style>
+
+
+<!-- ===== Blog Section: Rose & White Gold ===== -->
+<section class="py-5" style="background: linear-gradient(to right, #fff8ec, #fdf3e7); font-family: 'Georgia', serif;">
+  <div class="container">
+
+    <!-- Rose Gold & White Gold Row -->
+    <div class="row mb-5">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h3 class="fw-bold text-dark">🌹 Rose Gold</h3>
+        <p class="text-dark" style="font-size: 20px;">
+          With its distinctive warm tint, rose gold is 
+          <em>“an alloy of pure gold and copper,”</em> Srikanth states, 
+          specifying its composition as <strong>75 percent gold and 25 percent copper.</strong> 
+          This blend offers a modern twist on traditional gold.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <h3 class="fw-bold text-dark">⚪ White Gold</h3>
+        <p class="text-dark" style="font-size: 20px;">
+          With its bright silvery sheen, white gold is 
+          <em>“an alloy of pure gold and copper,”</em> Srikanth explains, 
+          specifying its composition as <strong>75 percent gold and 25 percent copper.</strong> 
+          This elegant alloy provides a stylish alternative to traditional yellow gold.
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Crown Jewel Section -->
+    <div class="row mb-5">
+      <div class="col-12">
+        <h4 class="fw-bold text-primary">The Crown Jewel: Yellow Gold’s Eminence</h4>
+        <p class="text-dark" style="font-size: 20px;">
+          When asked about the most valuable gold type, Srikanth’s expertise shines through: 
+          <strong>“Yellow gold has a purity of 91.6 percent.”</strong> 
+          This declaration highlights yellow gold’s dominance and lasting attractiveness in the market.
+        </p>
+      </div>
+    </div>
+
+    <!-- Purity Testing Section -->
+    <div class="row mb-5">
+      <div class="col-12">
+        <h4 class="fw-bold text-primary">The Art and Science of Purity Testing</h4>
+        <p class="text-dark" style="font-size: 20px;">
+          In the quest for authenticity, the gold industry has seen significant advancements in testing methods. 
+          Srikanth outlines the evolution from traditional to modern techniques:
+          <em>“The organized sectors will use state-of-the-art technology. It is a non-destructive method. In older days, it was about rubbing the gold, but now, with modern technology, gold is kept inside a machine where rays will be passed through the metal, and in 30 seconds, the exact results will be given.”</em>
+        </p>
+        <p class="text-dark" style="font-size: 20px;">
+          He also touches on traditional methods that persist due to their simplicity, such as the 
+          <em>“rubbing on a touchstone”</em> and the use of <em>“gold testing pens.”</em> 
+          However, he acknowledges their shortcomings compared to modern technologies.
+        </p>
+      </div>
+    </div>
+
+    <!-- Future Trading Section -->
+    <div class="row">
+      <div class="col-12">
+        <h4 class="fw-bold text-primary">Forward Through Innovation: The Future of Gold Trading</h4>
+        <p class="text-dark" style="font-size: 20px;">
+          Srikanth’s reflections provide a deep dive into the gold trading industry, highlighting the delicate balance between tradition and innovation. His experienced voice navigates the complex world of gold, exploring its diverse types and the accuracy involved in assessing purity.
+        </p>
+        <p class="text-dark" style="font-size: 20px;">
+          As the industry forges ahead, the insights from leaders like Srikanth V ensure that the legacy and allure of gold remain as radiant as ever, captivating the imagination of traders, craftsmen, and consumers alike.
+        </p>
+        <p class="fw-bold text-uppercase">ASLI KAHANI</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== Custom CSS ===== -->
+<style>
+section h3 {
+  text-shadow: 0 0 5px gold, 0 0 10px #f7d794;
+}
+hr {
+  border: 1px solid #d4a373;
+  opacity: 0.6;
+}
+</style>
+
+
+
+                    <!-- Repeat blog-item blocks here -->
+                </div>
+            </div>
+
+             <!-- Right Column (Sidebar with Sticky) -->
+    <div class="col-lg-4">
+      <div class="sticky-top" style="top: 90px;"> <!-- Adjust top offset for navbar -->
+        
+        <!-- Search Widget -->
+        <div class="mb-4 p-3 border rounded shadow-sm bg-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+          <h5 class="fw-bold mb-3">Search</h5>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search">
+            <button class="btn btn-danger" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+
+        <!-- Categories Widget -->
+        <div class="mb-4 p-3 border rounded shadow-sm bg-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+          <h5 class="fw-bold mb-3">Categories</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="#" class="text-decoration-none">SriStar Gold <span class="text-muted">(6)</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Recent Posts Widget -->
+        <div class="mb-4 p-3 border rounded shadow-sm bg-white" style="font-family: 'Times New Roman', Times, serif;">
+          <h5 class="fw-bold mb-3">Recent Posts</h5>
+          <ul class="list-unstyled">
+            <li class="mb-3 d-flex">
+              <img src="images/invest1.jpg" alt="thumb" width="70" height="70" class="me-3 rounded object-fit-cover">
+              <div><a href="blog01.html" class="fw-bold text-decoration-none">GOLD INVESTMENT</a></div>
+            </li>
+            <li class="mb-3 d-flex">
+              <img src="images/b2.png" alt="thumb" width="70" height="70" class="me-3 rounded object-fit-cover">
+              <div><a href="blog2.html" class="fw-bold text-decoration-none">KNOW YOUR GOLD 1</a></div>
+            </li>
+            <li class="mb-3 d-flex">
+              <img src="images/b4.png" alt="thumb" width="70" height="70" class="me-3 rounded object-fit-cover">
+              <div><a href="blog3.html" class="fw-bold text-decoration-none">UNDERSTANDING GOLD TESTING</a></div>
+            </li>
+            <li class="mb-3 d-flex">
+              <img src="images/blog4.png" alt="thumb" width="70" height="70" class="me-3 rounded object-fit-cover">
+              <div><a href="blog4.html" class="fw-bold text-decoration-none">EXPLORING THE GOLDEN TRAILS</a></div>
+            </li>
+            <li class="mb-3 d-flex">
+              <img src="images/b5.png" alt="thumb" width="70" height="70" class="me-3 rounded object-fit-cover">
+              <div><a href="blog5.html" class="fw-bold text-decoration-none">KNOW YOUR GOLD 2</a></div>
+            </li>
+            <li class="mb-3 d-flex">
+              <img src="images/blog6.png" alt="thumb" width="70" height="70" class="me-3 rounded object-fit-cover">
+              <div><a href="blog6.html" class="fw-bold text-decoration-none">KNOW YOUR GOLD 3</a></div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tags Widget -->
+        <div class="mb-4 p-3 border rounded shadow-sm bg-white">
+          <h5 class="fw-bold mb-3">Tags</h5>
+          <div class="d-flex flex-column gap-3">
+            <a href="#" class="btn btn-lg btn-outline-dark rounded-pill mx-auto" style="width: 200px;">Gold Value</a>
+            <a href="#" class="btn btn-lg btn-outline-dark rounded-pill mx-auto" style="width: 200px;">SriStar</a>
+            <a href="#" class="btn btn-lg btn-outline-dark rounded-pill mx-auto" style="width: 200px;">Jewellery</a>
+            <a href="#" class="btn btn-lg btn-outline-dark rounded-pill mx-auto" style="width: 200px;">Buy Gold</a>
+            <a href="#" class="btn btn-lg btn-outline-dark rounded-pill mx-auto" style="width: 200px;">Sell Gold</a>
+            <a href="#" class="btn btn-lg btn-outline-dark rounded-pill mx-auto" style="width: 200px;">Loan Release</a>
+            <a href="#" class="btn btn-lg btn-outline-dark rounded-pill mx-auto" style="width: 200px;">Hallmark</a>
+            <a href="#" class="btn btn-lg btn-outline-dark rounded-pill mx-auto" style="width: 200px;">Process</a>
+          </div>
+        </div>
+
+      </div> <!-- sticky-top end -->
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SriStar Gold - Final CTA & Comment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: #fdfcf9;
+        font-family: 'Arial', sans-serif;
+      }
+
+      .cta-block {
+        background-color: #fffbea;
+        padding: 30px;
+        border-radius: 10px;
+        margin: 30px auto;
+        max-width: 800px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .cta-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #d89f00;
+        margin-bottom: 25px;
+      }
+
+      .cta-item {
+        margin-bottom: 20px;
+      }
+
+      .cta-item h6 {
+        font-weight: 700;
+      }
+
+      .cta-item a {
+        text-decoration: none;
+        color: #007bff;
+      }
+
+      .cta-item a:hover {
+        text-decoration: underline;
+      }
+
+      .highlight {
+        background-color: #d4edda;
+        padding: 15px;
+        border-radius: 8px;
+        font-weight: 600;
+        color: #155724;
+      }
+
+      .comment-box {
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 25px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 40px auto;
+        max-width: 600px;
+      }
+
+      .form-label {
+        font-weight: bold;
+        color: #6d4000;
+      }
+
+      .form-control:focus {
+        border-color: #a66100;
+        box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+      }
+
+      .form-control.error {
+        border: 2px solid red;
+      }
+
+      .error-message {
+        color: red;
+        font-size: 0.9rem;
+        margin-top: -5px;
+        margin-bottom: 10px;
+      }
+
+      .btn-comment {
+        background-color: #ff0000;
+        color: white;
+        border-radius: 8px;
+      }
+
+      .btn-comment:hover {
+        background-color: #c40000;
+      }
+
+      iframe {
+        width: 100%;
+        height: 500px;
+        border: 0;
+        border-radius: 10px;
+      }
+
+      @media (max-width: 576px) {
+        .cta-title {
+          font-size: 1.4rem;
+        }
+
+        .cta-item h6 {
+          font-size: 1rem;
+        }
+
+        .cta-item p {
+          font-size: 0.9rem;
+        }
+
+        /* .comment-box {
+          margin: 20px;
+          padding: 20px;
+        } */
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Final CTA Block -->
+    <div class="container">
+      <div class="cta-block text-center"style="font-size: 20px;">
+        <div class="cta-title" style="font-size: 30px;">📢 Final CTA Block - SriStar Gold Company</div>
+
+        <div class="cta-item">
+          <h6>📍 Visit →</h6>
+          <p><a href="branches.html">Find Your Nearest Branch</a><br>
+            Walk into any of our trusted SriStar branches across South India.</p>
+        </div>
+
+        <div class="cta-item">
+          <h6>📞 Call →</h6>
+          <p><a href="tel:6366333444">6366333444</a><br>
+            Speak directly with our gold valuation experts.</p>
+        </div>
+
+        <div class="cta-item mt-3">
+          <h6>💰 Sell →</h6>
+          <p><a href="#">Sell Gold for Instant Cash</a><br>
+            Get the <strong>highest price</strong>, <strong>transparent service</strong>, and <strong>instant
+              payment</strong>.
+          </p>
+        </div>
+
+        <div class="cta-item mt-4">
+          <h6>💬 Chat on WhatsApp →</h6>
+          <p>
+            <a href="https://wa.me/916366333444" target="_blank" rel="noopener noreferrer">
+              Click to Chat Instantly
+            </a><br>
+            Quick assistance, branch details, gold calculator & more.
+          </p>
+        </div>
+
+        <div class="cta-item mt-4">
+          <h6>🌐 Visit Our Website →</h6>
+          <p><a href="https://sristargoldcompany.com" target="_blank">www.sristargoldcompany.com</a><br>
+            Explore services, offers, branch locator, and gold news.</p>
+        </div>
+
+        <div class="highlight mt-4">
+          ✅ Sell Gold the Right Way — Trusted by Thousands of Happy Customers!<br>
+          Experience SriStar’s reliable, respectful, and rewarding gold-selling process.
+        </div>
+      </div>
+    </div>
+
+    <!-- Google Map -->
+<div class="container-fluid my-5 px-0">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.7537034551293!2d77.571261!3d13.0082814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae175987bfcea9%3A0x4e8aac7669ecfacf!2sSriStar%20Gold%20Company!5e0!3m2!1sen!2sin!4v1721553100000!5m2!1sen!2sin"
+        class="map-iframe"
+        allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<style>
+  .map-iframe {
+    width: 100%;         /* Always responsive */
+    max-width: 900px;    /* Limit width on desktop */
+    height: 500px;       /* Default desktop height */
+    border: 0;
+    display: block;
+    margin: 0 auto;      /* Center on desktop */
+  }
+
+  /* Tablet view */
+  @media (max-width: 768px) {
+    .map-iframe {
+      height: 350px;     /* More usable height on tablets */
+    }
+  }
+
+  /* Mobile view */
+  @media (max-width: 480px) {
+    .map-iframe {
+      height: 300px;     /* Full width with good height */
+    }
+  }
+</style>
+
+     <!-- Comment Form -->
+<div class="container">
+  <div class="comment-box" style="font-size: 30px;">
+    <h4 class="mb-4 text-center" style="font-family: Georgia, 'Times New Roman', Times, serif">
+      💬 Leave A Comment
+    </h4>
+
+    <form id="commentForm" novalidate>
+      <!-- Name -->
+      <div class="mb-3" style="font-size: 20px;">
+        <label for="name" class="form-label" style="font-family: Georgia, 'Times New Roman', Times, serif">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+      </div>
+
+      <!-- Phone -->
+      <div class="mb-3" style="font-size: 20px;">
+        <label for="phone" class="form-label" style="font-family: Georgia, 'Times New Roman', Times, serif">Phone:</label>
+        <input type="tel" class="form-control" style="font-family: 'Times New Roman', Times, serif" id="phone" placeholder="+91 98765 43210" required>
+        <div class="error-message text-danger" id="phoneError"></div>
+      </div>
+
+      <!-- Email -->
+      <div class="mb-3" style="font-size: 20px;">
+        <label for="email" class="form-label" style="font-family: Georgia, 'Times New Roman', Times, serif">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+      </div>
+
+      <!-- Message -->
+      <div class="mb-3" style="font-size: 20px;">
+        <label for="message" class="form-label" style="font-family: Georgia, 'Times New Roman', Times, serif">Message:</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..." required></textarea>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="form-check mb-3" style="font-size: 20px;">
+        <input class="form-check-input" type="checkbox" id="saveInfo">
+        <label class="form-check-label" for="saveInfo" style="font-family: Georgia, 'Times New Roman', Times, serif">
+          Save my name, email, and phone in this browser for the next time I comment.
+        </label>
+      </div>
+
+      <!-- Button -->
+      <div class="text-center" style="font-size: 20px;">
+        <button type="submit" class="btn btn-comment btn-primary" style="font-family: Georgia, 'Times New Roman', Times, serif">
+          Post Comment <i class="bi bi-box-arrow-up-right ms-1"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Bootstrap Thank You Modal -->
+<div class="modal fade" id="thankYouModal" tabindex="-2" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4">
+      <h4 class="mb-4">✅ Thank You!</h4>
+      <p>Your comment has been submitted successfully.</p>
+      <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript for validation -->
+<script>
+  document.getElementById("commentForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const phoneInput = document.getElementById("phone");
+    const phoneError = document.getElementById("phoneError");
+    const phoneRegex = /^\+?[0-9\s\-]{10,20}$/;
+
+    if (!phoneRegex.test(phoneInput.value.trim())) {
+      phoneInput.classList.add("is-invalid");
+      phoneError.textContent = "Please enter a valid phone number.";
+    } else {
+      phoneInput.classList.remove("is-invalid");
+      phoneError.textContent = "";
+
+      // Show thank you modal
+      var thankYouModal = new bootstrap.Modal(document.getElementById("thankYouModal"));
+      thankYouModal.show();
+
+      // Reset form
+      document.getElementById("commentForm").reset();
+    }
+  });
+</script>
+</body>
+
+
+<!-- Go Back & Next Buttons -->
+<div class="container text-center my-5">
+  <div class="d-inline-flex gap-3">
+    <!-- Go Back Button -->
+    <button class="btn btn-secondary" onclick="history.back()">← Go Back</button>
+
+    <!-- Next Button -->
+    <a href="blog5.html" class="btn btn-outline-secondary">Next Blog →</a>
+  </div>
+</div>
+
+</section>
+
+
+
+ <!-- FOOTER (Mobile-Optimized, Times New Roman Font) -->
+<footer class="text-dark pt-5 pb-4"
+  style="background: linear-gradient(135deg, #e8b188, #e9d2af); font-family: 'Times New Roman', Times, serif; font-size: 17px;">
+  <div class="container">
+    <div class="row text-start gy-4">
+
+      <!-- Logo & Contact -->
+      <div class="col-12 col-md-3">
+        <img src="images/logo2.png" alt="Sristar Logo" style="max-width: 200px;"
+          class="mb-4 d-block mx-auto mx-md-0">
+        <ul class="list-unstyled ps-md-0">
+          <li class="mb-3 d-flex align-items-start">
+            <i class="bi bi-geo-alt-fill me-3 fs-4"></i>
+            <span style="line-height: 1.6;">
+              Corp. Off: 280/1, Anniamma Arcade,<br>
+              Sampige Road, 18th Cross Rd,<br>
+              Malleshwaram, Bengaluru, Karnataka 560003
+            </span>
+          </li>
+          <li class="mb-3 d-flex align-items-start">
+            <i class="bi bi-envelope-fill me-3 fs-4"></i>
+            <span>sristargoldcompany@gmail.com</span>
+          </li>
+          <li class="d-flex align-items-start">
+            <i class="bi bi-telephone-fill me-3 fs-4"></i>
+            <span>+91 6366333444</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Useful Links -->
+      <div class="col-6 col-md-3">
+        <h5 class="fw-bold fs-4 mb-3">Useful Links</h5>
+        <ul class="list-unstyled">
+          <li class="mb-3"><i class="bi bi-chevron-right me-2 fs-5"></i><a href="index.html"
+              class="text-dark text-decoration-none">Home</a></li>
+          <li class="mb-3"><i class="bi bi-chevron-right me-2 fs-5"></i><a href="about.html"
+              class="text-dark text-decoration-none">About Us</a></li>
+          <li class="mb-3"><i class="bi bi-chevron-right me-2 fs-5"></i><a href="services.html"
+              class="text-dark text-decoration-none">Services</a></li>
+          <li class="mb-3"><i class="bi bi-chevron-right me-2 fs-5"></i><a href="contact.html"
+              class="text-dark text-decoration-none">Contact</a></li>
+          <li class="mb-3"><i class="bi bi-chevron-right me-2 fs-5"></i><a href="branches.html"
+              class="text-dark text-decoration-none">Branches</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="col-6 col-md-3">
+        <h5 class="fw-bold fs-4 mb-3">Services</h5>
+        <ul class="list-unstyled">
+          <li class="mb-3"><i class="bi bi-chevron-right me-2 fs-5"></i><a href="webuygold.html"
+              class="text-dark text-decoration-none">We Buy Gold</a></li>
+          <li class="mb-3"><i class="bi bi-chevron-right me-2 fs-5"></i><a href="wesellgold.html"
+              class="text-dark text-decoration-none">We Sell Gold</a></li>
+          <li class="mb-3"><i class="bi bi-chevron-right me-2 fs-5"></i><a href="goldonrent.html"
+              class="text-dark text-decoration-none">Gold on Rent</a></li>
+          <li class="mb-3"><i class="bi bi-chevron-right me-2 fs-5"></i><a href="releasegold.html"
+              class="text-dark text-decoration-none">We Release Gold</a></li>
+          <li class="mb-3"><i class="bi bi-chevron-right me-2 fs-5"></i><a href="repledgegold.html"
+              class="text-dark text-decoration-none">Release Pledged Gold</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="col-12 col-md-3">
+        <h5 class="fw-bold fs-4 mb-3">Follow Us</h5>
+        <div class="d-flex flex-wrap justify-content-start gap-4 fs-3 follow-icons">
+  <a href="https://www.facebook.com/sristargold" target="_blank"><i class="bi bi-facebook text-dark"></i></a>
+  <a href="https://www.instagram.com/sristargold/" target="_blank"><i class="bi bi-instagram text-white"></i></a>
+  <a href="https://www.youtube.com/channel/UC7xKHOdqDLvlnynflYNBdew/playlists" target="_blank"><i class="bi bi-youtube text-dark"></i></a>
+  <a href="https://x.com/SriStarGold/status/1422861180884770824" target="_blank"><i class="bi bi-twitter text-white"></i></a>
+  <a href="https://www.linkedin.com/company/sristargold/" target="_blank"><i class="bi bi-linkedin text-dark"></i></a>
+  <a href="https://in.pinterest.com/sristargold/" target="_blank"><i class="bi bi-pinterest text-white"></i></a>
+</div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center py-3 border-top border-light mt-4" style="font-size: 16px;">
+    &copy; 2025 <strong>Sristar Gold Company</strong>. All rights reserved.
+  </div>
+</footer>
+<style>
+  @media (min-width: 768px) {
+  .footer-useful-links {
+    padding-left: 40px;
+  }
+}
+
+  @media (min-width: 768px) {
+  .footer-column-spacing {
+    padding-left: 40px;
+  }
+}
+
+
+/* Social icons default style */
+.follow-icons a i {
+  transition: color 0.3s ease;
+}
+
+/* Facebook */
+.follow-icons a:hover .bi-facebook {
+  color: #1877F2 !important; /* Facebook blue */
+}
+
+/* Instagram */
+.follow-icons a:hover .bi-instagram {
+  color: #E4405F !important; /* Instagram pink-red */
+}
+
+/* YouTube */
+.follow-icons a:hover .bi-youtube {
+  color: #FF0000 !important; /* YouTube red */
+}
+
+/* Twitter (X) */
+.follow-icons a:hover .bi-twitter {
+  color: #1DA1F2 !important; /* Twitter blue */
+}
+
+/* LinkedIn */
+.follow-icons a:hover .bi-linkedin {
+  color: #0A66C2 !important; /* LinkedIn blue */
+}
+
+/* Pinterest */
+.follow-icons a:hover .bi-pinterest {
+  color: #BD081C !important; /* Pinterest red */
+}
+</style>
+
+<!-- JS -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+            </body>
+
+</html>

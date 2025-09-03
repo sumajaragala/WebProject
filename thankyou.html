@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #fff9e6, #fbe1b6);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .thank-you-box {
+      background-color: #fff3dd;
+      border: 2px solid #d4af37;
+      border-radius: 20px;
+      padding: 40px 30px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+    }
+
+    .thank-you-box h1 {
+      font-size: 2.4rem;
+      color: #a67c00;
+      font-weight: bold;
+    }
+
+    .thank-you-box p {
+      font-size: 1.1rem;
+      color: #5a4e38;
+      margin-top: 15px;
+    }
+
+    .btn-custom {
+      margin-top: 20px;
+      background-color: #d4af37;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #b78c20;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="thank-you-box">
+    <h1>Thank You!</h1>
+    <p>Your form has been submitted successfully.<br>We will get in touch with you soon.</p>
+    <button onclick="history.back()" class="btn btn-custom">Go Back</button>
+  </div>
+
+</body>
+</html>
