@@ -370,27 +370,29 @@
                 <label for="name" class="form-label text-dark">Name:</label>
                 <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your name">
               </div>
-              <div class="mb-4 text-start">
-                <label for="contact" class="form-label text-dark">Contact Number:</label>
-                <input type="tel" class="form-control" id="contact" name="contact" required placeholder="10-digit mobile number">
-              </div>
-              <div class="mb-4 text-start">
-                <label for="type" class="form-label text-dark">Select Type:</label>
-                <select class="form-select" id="type" name="type" required>
-                  <option selected disabled>Select an option</option>
-                  <option value="sell">Sell Gold</option>
-                  <option value="release">Release Pledged Gold</option>
-                  <option value="enquiry">General Enquiry</option>
-                </select>
-              </div>
-              <div class="mb-4 text-start">
-                <label for="state" class="form-label text-dark">Select Your State:</label>
-                <select class="form-select" id="state" name="state" required>
-                  <option selected disabled>Select your state</option>
-                  <option value="karnataka">Karnataka</option>
-                  <option value="tamilnadu">Tamil Nadu</option>
-                </select>
-              </div>
+               <div class="mb-4 text-start fade-in delay-3">
+              <label for="contact" class="form-label fs-5">Contact Number:</label>
+             <input type="tel" class="form-control" id="popup-contact" placeholder="Contact Number"
+        pattern="[0-9]{10}" maxlength="10" required />
+            </div>
+            <div class="mb-4 text-start fade-in delay-4">
+              <label for="type" class="form-label fs-5">Select Type:</label>
+             <select class="form-select" id="popup-type" required>
+        <option value="">Select Type</option>
+        <option>Buy Gold</option>
+        <option>Sell Gold</option>
+        <option>Repledge Gold</option>
+      </select>
+      </div>
+
+       <div class="mb-5 text-start fade-in delay-5">
+              <label for="state" class="form-label fs-5">Select Your State:</label>
+      <select class="form-select" id="popup-state" required>
+        <option value="">Select Your State</option>
+        <option>Karnataka</option>
+        <option>Tamil Nadu</option>
+      </select>
+            </div>           
             </div>
             <button type="submit" class="btn btn-warning w-100 py-3 fw-bold">SUBMIT</button>
           </form>
@@ -1076,5 +1078,6 @@
       <!-- JS -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     </body>
+
 
 </html>
